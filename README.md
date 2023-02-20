@@ -1,92 +1,46 @@
 # Text Classification
 
-A tutorial on text classification
+Text classification is the process of categorizing text documents into pre-defined groups using machine learning methods.
+
+## Session description
+In this session, we will try to identify, visualize, and exploit patterns in features extracted from text: Which texts are more similar? Which are different? Can we use these features to classify texts into categories?
+
+In this session, we will dig deeper into the extracted features and use dimensionality reduction techniques to visualize emerging patterns. Using the State of the Union dataset, we will practice what we have learned by trying to automatically guess if a speech was delivered by a Democratic or a Republican president.
 
 ## Getting started
 
-To make it easy for you to get started with GitLab, here's a list of recommended next steps.
+### Requirements
+While not strictly required, attending the [previous sessions in the series](https://git.dartmouth.edu/lib-digital-strategies/RDS/workshops/text-analysis/text-analysis-with-python) and [Intro to Machine Learning with scikit-learn](https://git.dartmouth.edu/lib-digital-strategies/RDS/workshops/machine-learning/intro-to-machine-learning-with-scikit-learn) is highly recommended.
 
-Already a pro? Just edit this README.md and make it your own. Want to make it easy? [Use the template at the bottom](#editing-this-readme)!
+### Install
+The material is provided as Jupyter notebooks. To run them, you need some kind of Jupyter server. Some options are:
+- A [local Jupyter installation](https://jupyter.org/install)
+- [Google Colaboratory](https://colab.research.google.com/)
+- The [Dartmouth JupyterHub](https://jhub.dartmouth.edu/) (Dartmouth-only)
 
-## Add your files
+### Usage
+The repo contains two notebooks:
+- `text-classification.ipynb`
+  - This notebook is intended to be used in a code-along session. It contains instructions and background info, as well as fully functional code.
+- `add-meta.ipynb`
+  - Code that is not directly relevant to the goals of the session is outsourced to this notebook to keep the main notebook as focused as possible.
 
-- [ ] [Create](https://docs.gitlab.com/ee/user/project/repository/web_editor.html#create-a-file) or [upload](https://docs.gitlab.com/ee/user/project/repository/web_editor.html#upload-a-file) files
-- [ ] [Add files using the command line](https://docs.gitlab.com/ee/gitlab-basics/add-file.html#add-a-file-using-the-command-line) or push an existing Git repository with the following command:
+### Issues and Feedback
+If you run into any trouble working with these materials, have some questions about the content, or want to give general feedback, feel free to go through one of these channels to get in touch with us:
+- [Open a new issue](https://git.dartmouth.edu/lib-digital-strategies/RDS/workshops/text-analysis/text-classification/-/issues)
+- [Send an email](mailto:simon.stone@dartmouth.edu)
+- [Book an appointment](https://dartgo.org/meetwithsimon) (Dartmouth-members only)
 
-```
-cd existing_repo
-git remote add origin https://git.dartmouth.edu/lib-digital-strategies/RDS/workshops/text-analysis/text-classification.git
-git branch -M master
-git push -uf origin master
-```
+### Licensing
+<table>
+<tbody>
+  <tr>
+    <td style="padding:0px;border-width:0px;vertical-align:center">
+    Instructional materials created by Simon Stone for Dartmouth College Library under <a href="https://creativecommons.org/licenses/by/4.0/">Creative Commons CC BY-NC 4.0 License</a>.
+    </td>
+    <td style="padding:0 0 0 1em;border-width:0px;vertical-align:center"><img alt="Creative Commons License" src="https://i.creativecommons.org/l/by/4.0/88x31.png"/></td>
+  </tr>
+</tbody>
+</table>
 
-## Integrate with your tools
-
-- [ ] [Set up project integrations](https://git.dartmouth.edu/lib-digital-strategies/RDS/workshops/text-analysis/text-classification/-/settings/integrations)
-
-## Collaborate with your team
-
-- [ ] [Invite team members and collaborators](https://docs.gitlab.com/ee/user/project/members/)
-- [ ] [Create a new merge request](https://docs.gitlab.com/ee/user/project/merge_requests/creating_merge_requests.html)
-- [ ] [Automatically close issues from merge requests](https://docs.gitlab.com/ee/user/project/issues/managing_issues.html#closing-issues-automatically)
-- [ ] [Enable merge request approvals](https://docs.gitlab.com/ee/user/project/merge_requests/approvals/)
-- [ ] [Automatically merge when pipeline succeeds](https://docs.gitlab.com/ee/user/project/merge_requests/merge_when_pipeline_succeeds.html)
-
-## Test and Deploy
-
-Use the built-in continuous integration in GitLab.
-
-- [ ] [Get started with GitLab CI/CD](https://docs.gitlab.com/ee/ci/quick_start/index.html)
-- [ ] [Analyze your code for known vulnerabilities with Static Application Security Testing(SAST)](https://docs.gitlab.com/ee/user/application_security/sast/)
-- [ ] [Deploy to Kubernetes, Amazon EC2, or Amazon ECS using Auto Deploy](https://docs.gitlab.com/ee/topics/autodevops/requirements.html)
-- [ ] [Use pull-based deployments for improved Kubernetes management](https://docs.gitlab.com/ee/user/clusters/agent/)
-- [ ] [Set up protected environments](https://docs.gitlab.com/ee/ci/environments/protected_environments.html)
-
-***
-
-# Editing this README
-
-When you're ready to make this README your own, just edit this file and use the handy template below (or feel free to structure it however you want - this is just a starting point!). Thank you to [makeareadme.com](https://www.makeareadme.com/) for this template.
-
-## Suggestions for a good README
-Every project is different, so consider which of these sections apply to yours. The sections used in the template are suggestions for most open source projects. Also keep in mind that while a README can be too long and detailed, too long is better than too short. If you think your README is too long, consider utilizing another form of documentation rather than cutting out information.
-
-## Name
-Choose a self-explaining name for your project.
-
-## Description
-Let people know what your project can do specifically. Provide context and add a link to any reference visitors might be unfamiliar with. A list of Features or a Background subsection can also be added here. If there are alternatives to your project, this is a good place to list differentiating factors.
-
-## Badges
-On some READMEs, you may see small images that convey metadata, such as whether or not all the tests are passing for the project. You can use Shields to add some to your README. Many services also have instructions for adding a badge.
-
-## Visuals
-Depending on what you are making, it can be a good idea to include screenshots or even a video (you'll frequently see GIFs rather than actual videos). Tools like ttygif can help, but check out Asciinema for a more sophisticated method.
-
-## Installation
-Within a particular ecosystem, there may be a common way of installing things, such as using Yarn, NuGet, or Homebrew. However, consider the possibility that whoever is reading your README is a novice and would like more guidance. Listing specific steps helps remove ambiguity and gets people to using your project as quickly as possible. If it only runs in a specific context like a particular programming language version or operating system or has dependencies that have to be installed manually, also add a Requirements subsection.
-
-## Usage
-Use examples liberally, and show the expected output if you can. It's helpful to have inline the smallest example of usage that you can demonstrate, while providing links to more sophisticated examples if they are too long to reasonably include in the README.
-
-## Support
-Tell people where they can go to for help. It can be any combination of an issue tracker, a chat room, an email address, etc.
-
-## Roadmap
-If you have ideas for releases in the future, it is a good idea to list them in the README.
-
-## Contributing
-State if you are open to contributions and what your requirements are for accepting them.
-
-For people who want to make changes to your project, it's helpful to have some documentation on how to get started. Perhaps there is a script that they should run or some environment variables that they need to set. Make these steps explicit. These instructions could also be useful to your future self.
-
-You can also document commands to lint the code or run tests. These steps help to ensure high code quality and reduce the likelihood that the changes inadvertently break something. Having instructions for running tests is especially helpful if it requires external setup, such as starting a Selenium server for testing in a browser.
-
-## Authors and acknowledgment
-Show your appreciation to those who have contributed to the project.
-
-## License
-For open source projects, say how it is licensed.
-
-## Project status
-If you have run out of energy or time for your project, put a note at the top of the README saying that development has slowed down or stopped completely. Someone may choose to fork your project or volunteer to step in as a maintainer or owner, allowing your project to keep going. You can also make an explicit request for maintainers.
+Except where otherwise noted, the example programs are made available under the OSI-approved MIT license.
